@@ -1,0 +1,45 @@
+name: Enhancement
+description: Improve an existing feature
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: feature
+    attributes:
+      label: Which feature?
+      description: The existing feature this is about.
+      placeholder: e.g. CSV export, login flow, search filters
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: How it works now
+      description: Describe the current behavior and what's limiting about it.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Proposed improvement
+      description: What should change, and how would it work better? Proposed steps to take.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Why it helps
+      description: Who benefits and how? What does this unlock or make easier?
+    validations:
+      required: false
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much does the current limitation get in the way?
+      options:
+        - Minor annoyance
+        - Slows me down regularly
+        - Blocks an important workflow
+    validations:
+      required: false
